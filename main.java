@@ -4,13 +4,13 @@ public class Main{
         Historico historico = new Historico();
 
         editor.adicionarTexto("Olá, ");
-        historico.salvar(editor.salvar());
+        historico.adicionarMemento(editor.adicionarMemento());
 
         editor.adicionarTexto("Caio");
-        historico.salvar(editor.salvar());
+        historico.adicionarMemento(editor.adicionarMemento());
 
         editor.adicionarTexto("!");
-        historico.salvar(editor.salvar());
+        historico.adicionarMemento(editor.adicionarMemento());
 
         editor.mostrarTexto();
 
