@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 //Caretaker: Vai gerenciar os mementos
+//Se não houver historico, o estado atual será vazio
 
 public class Historico {
     private List<TextoMemento> historico = new ArrayList<>();
@@ -14,6 +15,6 @@ public class Historico {
         if(!historico.isEmpty()){
             return historico.remove(historico.size() - 1);
         }
-        return new TextoMemento(""); //Se não houver historico, o estado atual será vazio
+        return new TextoMemento("");
     }
 }
