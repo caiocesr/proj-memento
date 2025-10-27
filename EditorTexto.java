@@ -3,19 +3,19 @@
 public class EditorTexto {
     private String texto = "";
 
-    public void adicionarTexto(String novoTexto){ //Vai modificar o estado atual
+    public void adicionarTexto(String novoTexto){ 
         texto += novoTexto;
     }
 
-    public TextoMemento salvar(){ //Cria um memento/pega conteúdo da atual variável texto, criando um novo Objeto TextoMemento (salva o texto)
+    public TextoMemento adicionarMemento(){  
         return new TextoMemento(texto);
     }
 
-    public void restaurar(TextoMemento memento){ //Recebe o texto que foi salvo em "salvar()" para voltar naquele "momento salvo"
+    public void restaurar(TextoMemento memento){ 
         texto = memento.getEstado();
     }
 
-    public void mostrarTexto(){ //Exibe o conteúdo atual
+    public void mostrarTexto(){ 
         System.out.println("Texto atual: " + texto);
     }
 }
