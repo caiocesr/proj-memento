@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Historico {
     private List<TextoMemento> historico = new ArrayList<>();
 
-    public void salvar(TextoMemento memento){
+    public void adicionarMemento(TextoMemento memento){
         historico.add(memento);
     }
 
